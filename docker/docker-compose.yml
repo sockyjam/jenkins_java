@@ -3,8 +3,7 @@ services:
 
 
   jenkins:
-    #build: jenkins
-    image: jenkins/jenkins:lts
+    build: jenkins
     container_name: sockyjam.jenkins.java
     volumes:
       - ./jenkins_home:/var/jenkins_home
