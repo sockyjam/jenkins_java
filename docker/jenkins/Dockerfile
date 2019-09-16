@@ -6,7 +6,7 @@ MAINTAINER SockyJam <sockyjam@126.com>
 USER root
 RUN apt-get update 
 RUN apt-get install -y rsync docker
-RUN service docker start
+#RUN service docker start
 
 
 # drop back to the regular jenkins user - good practice
