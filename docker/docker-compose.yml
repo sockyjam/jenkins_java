@@ -9,7 +9,9 @@ services:
       - ./jenkins_home:/var/jenkins_home
       - /etc/localtime:/etc/localtime
       - /var/run/docker.sock:/var/run/docker.sock
-      - /usr/bin/docker:/usr/bin/docker
+      #- /usr/bin/docker:/usr/bin/docker
+      #- /etc/sysconfig/docker:/etc/sysconfig/docker
+      #- /usr/bin/docker-current:/usr/bin/docker-current
     ports:
       - "8080:8080"
       - "50000:50000"
